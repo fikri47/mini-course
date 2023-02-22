@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  padding: 0px 10px 0 10px;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.navbar .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar.active {
+  background-color: #fcde67;
+}
+
+.navbar .col-logo img {
+  margin: 1rem 2rem;
+  height: 50px;
+  width: 50px;
+}
+
+.navbar .col-navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .col-navigation li {
+  list-style-type: none;
+  margin-inline: 20px;
+}
+
+.navbar .col-navigation a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar .col-navigation a:hover {
+  font-weight: bold;
+}
+
+.navbar .col-navigation i {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #fcde67;
+}
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+.hero .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  line-height: 4rem;
+}
+
+.content {
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+  background-color: #f48200;
+}
+
+.content .row .group-card {
+  display: flex;
+  margin-top: 2.8rem;
+  flex-wrap: wrap;
+}
+
+.content h1 {
+  margin-top: 2rem;
+}
+
+.content .row .card {
+  margin-inline: 20px;
+  text-align: center;
+}
+
+.content .row .group-card .card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+}
+
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fcde67;
+}
+
+.contact .row .column-group {
+  display: flex;
+  align-items: center;
+}
+
+.contact .row .column-group .column-form form .form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.contact .row .column-title h1 {
+  padding: 20px 0 20px 0;
+}
+
+.contact .row .column-group .column-form form .form-group input[type="text"],
+.contact .row .column-group .column-form form .form-group input[type="date"] {
+  width: 300px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 5px;
+  padding-left: 5px;
+}
+
+.contact .row .column-form form .form-group input[type="radio"] {
+  width: 10px;
+  margin-right: 10px;
+}
+
+.contact .row .column-form form .form-group textarea {
+  width: 300px;
+  height: 100px;
+  padding: 10px 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 10px;
+}
+.contact .row .column-form form .form-group input[type="button"] {
+  width: 300px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ffb449;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact .row .column-card {
+  width: 100%;
+  min-height: 50vh;
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: wheat;
+  margin-left: 100px;
+}
+
+footer {
+  min-height: 2vh;
+  background-color: wheat;
+  text-align: end;
+  padding: 20px 20px;
+}
+
+@media screen and (min-width: 992px) {
+  .contact .row .column-group {
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content .row .group-card {
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .contact .row .column-group {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+  .contact .row .column-card {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    width: 88%;
+    margin-inline: auto;
+  }
+
+  .navbar .row .col-logo img {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+  }
+
+  .navbar .row .col-navigation ul li a {
+    font-size: 10px;
+  }
+
+  .hero .row {
+    text-align: center;
+  }
+
+  .content .row .group-card {
+    justify-content: center;
+  }
+
+  .content .row .group-card .card {
+    padding-bottom: 40px;
+  }
+
+  .content .row .group-card .card p {
+    padding-top: 20px;
+  }
+
+  .contact .row .column-group {
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  .contact .row .column-card {
+    margin-left: 0px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
