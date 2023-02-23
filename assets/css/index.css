@@ -183,14 +183,37 @@ footer {
   padding: 20px 20px;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1024px) {
+  .navbar .col-navigation a {
+    font-size: 1.5rem;
+  }
+
   .contact .row .column-group {
     flex-direction: row;
     padding-bottom: 20px;
   }
+
+  .contact .row .column-group .column-form form .form-group {
+    font-size: 20px;
+  }
+  .contact .row .column-group .column-form form .form-group input[type="text"],
+.contact .row .column-group .column-form form .form-group input[type="date"]{
+  height: 30px;
+  font-size: 20px;
+}
+
+.contact .row .column-form form .form-group input[type="radio"] {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
 }
 
 @media screen and (max-width: 768px) {
+  .hero h1 {
+    text-align: center;
+  }
+
   .content .row .group-card {
     justify-content: center;
     padding-bottom: 20px;
@@ -250,3 +273,5 @@ footer {
     text-align: center;
   }
 }
+
+

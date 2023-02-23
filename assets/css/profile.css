@@ -48,6 +48,7 @@
 
 .about .row .col:nth-child(2) p {
   letter-spacing: 2px;
+  font-size: 20px;
   line-height: 1.6;
   text-align: justify;
   text-justify: inter-word;
@@ -139,25 +140,29 @@ footer .row-footer .col-footer a {
 }
 
 @media screen and (min-width: 1024px) {
+  
+
   .content-profile .row .col-group {
     gap: 4rem;
   }
 }
 
-@media screen and (max-width: 988px) {
+@media screen and (max-width: 768px) {
   .jumbotron .row {
     font-size: 0.8rem;
     margin: 20px;
   }
 
-  .about {
+  .about .row {
     display: flex;
+    flex-direction: column;
     align-items: center;
+  
   }
 
   .about .row .col:nth-child(1) img {
     width: 500px;
-    height: 266px;
+    height: 366px;
     -webkit-border-radius: 11px;
     -webkit-border-bottom-left-radius: 223px;
     -moz-border-radius: 11px;
@@ -171,12 +176,13 @@ footer .row-footer .col-footer a {
   }
 
   .about .row .col:nth-child(2) h1 {
+    padding-top: 20px;
     padding-bottom: 10px;
     font-size: 30px;
   }
 
   .about .row .col:nth-child(2) p {
-    font-size: 13px;
+    font-size: 18px;
     letter-spacing: 2px;
     line-height: 1.6;
     text-align: justify;
