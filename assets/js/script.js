@@ -16,9 +16,6 @@ function display_c() {
     display_c();
   }
 
-  var WelcomeName = prompt("Silahkan Isikan Nama Anda");
-  document.getElementById("welcome-nama").innerText = WelcomeName;
-
   function validateForm() {
     var name = document.forms["message-form"]["nama"].value;
     var date = document.forms["message-form"]["birth-date"].value;
